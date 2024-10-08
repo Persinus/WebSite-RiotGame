@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot Games Navigation</title>
+    <link rel="stylesheet" href="./Css/Trangchulienminh.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="trangchulienminh.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+<style>
+   
+</style>
+
+<body>
+
+    <header>
+        <div class="flex items-center space-x-3">
+            <!-- Logo SVG -->
+            <svg class="w-8 h-8" fill="#ffffff" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <title>Riot Games icon</title>
+                <path
+                    d="M12.534 21.77l-1.09-2.81 10.52.54-.451 4.5zM15.06 0L.307 6.969 2.59 17.471H5.6l-.52-7.512.461-.144 1.81 7.656h3.126l-.116-9.15.462-.144 1.582 9.294h3.31l.78-11.053.462-.144.82 11.197h4.376l1.54-15.37Z" />
+            </svg>
+
+            <!-- Brand Name -->
+            <div class="flex flex-col">
+                <span style="color: white; font-size: 1.125rem; font-weight: bold;">Riot</span>
+                <span style="color: white; font-size: 1rem;">Game</span>
+            </div>
+        </div>
+
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+
+        <div class="flex items-center">
+            <a href="https://wildrift.leagueoflegends.com/vi-vn/game-overview/" class=" navbar-left">TỔNG QUAN TRÒ CHƠI</a>
+            <a href="https://wildrift.leagueoflegends.com/vi-vn/news/" class=" navbar-left">Tin Tức</a>
+            <a href="https://wildrift.leagueoflegends.com/vi-vn/champions/" class=" navbar-left">Tướng</a>
+            <a href="https://findyourchampion.wildrift.leagueoflegends.com/vi-vn/" class=" navbar-left">Chọn tướng của bạn</a>
+            <a href="https://support-wildrift.riotgames.com/hc/vi" class=" navbar-left">Hỗ trợ</a>
+            <a href="" class=" navbar-left">Mạng xã hội </a>
+            <a href="" class=" navbar-left">Thêm </a>
+            
+            <a href="./Sign_In.html" class=" navbar-left">ĐĂNG NHẬP</a>
+          
+
+           
+        </div>
+    </header>
+
+    <div class="relative inline-block">
+        <button
+            class="relative bg-black text-white px-4 py-2 text-xs rounded hover:bg-gray-800 transition duration-300 nav-button">THÊM</button>
+        <div class="dropdown hidden">
+            <ul class="bg-gray-900 text-white">
+                <li class="px-4 py-2">Mạng Xã Hội</li>
+                <li class="px-4 py-2">Thi Đấu Cạnh Tranh</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div>
+        <button id="navigateButton"><a href="./Sign_In.html" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700">Đi đến Trang Chủ</a></button>  
+    </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('header').classList.toggle('menu-opened');
+        }
+    </script>
+
+    </header>
+
+
+
+    <div>
+        <video class="video-background" autoplay loop muted>
+            <source src="/Nguyenmanh/FileImageAndvideo/video1.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+
+        <div class="content">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/74f09240c5a0dfce67f3cf2e9611ee1a9cfb0b1e-736x500.png?auto=format&fit=fill&q=80&w=522"
+                alt="L Logo" class="w-[320px] mx-auto mb-20">
+
+            <p class=text-xs text-center>LIÊN MINH HUYỀN THOẠI HIỆN ĐÃ CÓ MẶT TRÊN DI ĐỘNG. CHƠI MIỄN PHÍ NGAY! TRÒ CHƠI
+                SẼ SỚM RA MẮT TRÊN
+                CONSOLE.</p>
+            <div class="app-buttons">
+                <a href="#" class="app-btn google-play-btn">
+                    <img src="./FileImageAndvideo/chplay.png" alt="Google Play">
+                    <span>Tải về trên<br>Google Play</span>
+                </a>
+                <a href="#" class="app-btn app-store-btn">
+                    <img src="./FileImageAndvideo/appstore.png" alt="App Store">
+                    <span>Tải về trên<br>App Store</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="news-section">
+        <div class="news-container">
+            <h2 class="news-title">TIN TỨC MỚI NHẤT</h2>
+            <a class="text-blue-500 text-lg flex items-center" href="#">
+                ĐẾN TRANG TIN TỨC
+                <i class="fas fa-arrow-right ml-2">
+                </i>
+            </a>
+        </div>
+        <div class="news-container">
+            <div class="news-card">
+                <iframe class="video-animate" width="100%" height="250" src="https://www.youtube.com/embed/e3K3WGZroeQ"
+                    title="Mordekaiser Update" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+                <div>
+                    <h5 class="news-title">
+                        <span class="text-blue-500">Thông báo</span>
+                        <span class="ml-2 text-black">2 tháng trước</span>
+                    </h5>
+                    <p>Bem-vindo Mordekaiser </p>
+                    <p>Sẵn sàng gia nhập phe hắc ám hoặc bị nuốt chửng!</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <iframe class="video-animate" width="100%" height="250" src="https://www.youtube.com/embed/bfyHnYmca2w"
+                    title="Tổng Quan Tướng Mordekaiser | Lối Chơi - Liên Minh Huyền Thoại: Tốc Chiến" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div>
+                    <h5 class="news-title">
+                        <span class="text-blue-500">Cập nhật trò chơi</span>
+                        <span class="ml-2 text-black">2 tháng trước</span>
+                    </h5>
+                    <p>Tổng Quan Tướng Mordekaiser
+
+                    <p>Dù cho đã 2 lần tử vong, nhưng tên chưa tể này chắc chắn sẽ đáp trả gấp mười từ ngày 23/08!</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <iframe class="video-animate" width="100%" height="250" src="https://www.youtube.com/embed/e3K3WGZroeQ"
+                    title="Mordekaiser Update" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+                <div>
+                    <h5 class="news-title">
+                        <span class="text-blue-500">Cập nhật trò chơi</span>
+                        <span class="ml-2 text-black">3 tháng trước</span>
+                    </h5>
+                    <p>Thế giới đang thay đổi, liệu bạn có sẵn sàng?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/f21d9a4d0dfffad664bbdc72522427761b018707-5120x480.png?auto=format&fit=fill&q=80&w=1922"
+            alt="test">
+    </div>
+    <div class="bg-blue-600 text-white font-roboto">
+        <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-6xl font-bold mb-4">CHÀO MỪNG ĐẾN VỚI TỐC CHIẾN</h1>
+                <p class="text-lg mb-8">Lập đội cùng bạn bè và thể hiện kỹ năng trong các trận chiến MOBA 5 đấu 5. Một
+                    trò chơi cạnh tranh khốc liệt đòi hỏi kỹ năng cao mà mọi game thủ mơ ước, được thiết kế đặc biệt
+                    dành cho thiết bị di động và console với cơ chế điều khiển phù hợp và hệ thống trận đấu tinh giản.
+                </p>
+                <button class="bg-black text-white py-2 px-6 rounded">TÌM HIỂU THÊM</button>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <iframe class="w-full h-64 md:h-96"  src="https://www.youtube.com/embed/JeB5_AwCLVA" title="Trailer Lối Chơi Chính Thức | Liên Minh Huyền Thoại: Tốc Chiến" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div>
+        <img
+            src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/2a92e68baa4d95df27a32f9c99e207b3b7b875e5-5120x480.png?auto=format&fit=fill&q=80&w=1896">
+    </div>
+
+    <div>
+
+        <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/cca5597e3a262cda5488a2a119a98c8dbfea66dc-5120x480.png?auto=format&fit=fill&q=80&w=1896"
+            alt="test">
+
+        <div class="bg-custom-gradient">
+            <div class="container">
+                <div class="flex">
+                    <img alt="Character with a blue bow and arrow, wearing a hooded cloak and armor"
+                        src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c3cb35f7a26ad687b54c379f433f5509c757d951-1232x1644.png?auto=format&fit=fill&q=80&w=847"
+                        style="width: 50%; height: auto;" />
+                    <div class="ml-10">
+                        <h1>HÃY CHỌN LẤY VỊ TƯỚNG CỦA BẠN</h1>
+                        <p>
+                            Xông vào chiến trường với một thanh kiếm khổng lồ, đóng băng kẻ địch trên đường đi bằng mũi
+                            tên băng bay xuyên bản đồ hay như đối thủ đến gặp tử thần bằng bùa phép kỳ diệu.
+                            Sẽ luôn có một vị tướng phù hợp với phong cách chơi của bạn.
+                        </p>
+                        <div style="margin-top: 2rem;">
+                            <button class="button bg-black">TÌM TƯỚNG CỦA BẠN</button>
+                            <button class="button text-black">XEM TẤT CẢ TƯỚNG
+                                <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <img
+            src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/64c981d87576c06193c961a3dea5d7ebbb9f5070-5120x480.png?auto=format&fit=fill&q=80&w=1896">
+    </div>
+    <div class="bg-white">
+        <div class="container mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <h1 class="text-6xl font-bold text-blue-900 leading-tight">
+                        TRANH
+                        <br />
+                        TÀI CÙNG
+                        <br />
+                        CHIẾN HỮU
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-700">
+                        Bạn có thể tham gia hàng chờ cùng toàn đội 5 người, hoặc thử khả năng leo hạng trong chế độ đấu
+                        đơn. Mỗi trận đấu đều sẽ là cơ hội để bạn tung ra kỹ năng định hướng hoàn hảo, lật ngược thế cờ
+                        bằng khả năng phối hợp đồng đội tuyệt đỉnh hoặc thực hiện thành công pha pentakill xuất sắc.
+                    </p>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0 md:ml-8"> class="w-full h-auto" height="400"
+                    <video autoplay>
+                        <source src="https://cmsassets.rgpub.io/sanity/files/dsfx7636/news/4b70a7cbcdedca007f6a8f0d6df704ea889a7a1a.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/4a63fa4b9eed144ee20beed985aa5135236b44fb-5120x480.png?auto=format&fit=fill&q=80&w=1896 ">
+
+    <div class="bg-gradient">
+        <div class="text-center py-12">
+            <h1 class="text-white text-4xl font-bold">THẾ GIỚI TỐC CHIẾN</h1>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item item1">
+                <img alt="A vibrant image of a female character with a large weapon"
+                    src="./FileImageAndvideo/img1.png" />
+                <p class="text-white mt-4">
+                    Hãy đến khám phá vũ trụ Liên Minh Huyền Thoại, thế giới Runeterra và cộng đồng toàn cầu các fan cực
+                    kỳ tuyệt vời.
+                </p>
+            </div>
+            <div class="flex-item item2">
+                <img alt="A large crowd at an esports event"
+                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/ff66d15a16b38305f653019aeb64065dc33101d9-844x1124.png?auto=format&fit=fill&q=80&w=548" />
+                <p class="text-white mt-4">
+                    Hòa mình vào các sự kiện không lồ, giải đấu esports LMHT hàng đầu cùng những trải nghiệm trò chơi
+                    không thể nào quên.
+                </p>
+            </div>
+            <div class="flex-item item3">
+                <img alt="A strong male character with a large hammer"
+                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/26190ce9513e83b08dd4ada9d02314538bcd10ac-844x1124.png?auto=format&fit=fill&q=80&w=688" />
+                <p class="text-white mt-4">
+                    Trong tâm của chúng tôi là trải nghiệm người chơi nên bạn có thể yên tâm rằng chúng tôi bảo đảm sẽ
+                    duy trì việc hỗ trợ và cải thiện trò chơi trong nhiều năm sắp tới.
+                </p>
+            </div>
+        </div>
+    </div>
+    <section>
+        <iframe class="w-full" height="700px" src="https://www.youtube.com/embed/NOfekyu5qv0?autoplay=1"
+            title="Tổng Quan Tướng Milio | Lối Chơi - Liên Minh Huyền Thoại: Tốc Chiến" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </section>
+
+</body>
+<footer>
+    <div class="main-content">
+        <div class="social-icons">
+            <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="game-logos">
+            <img src="./FileImageAndvideo/logoRiot.png" alt="Riot Games" class="riot-logo">
+            <img src="./FileImageAndvideo/vng.png" alt="VNG Games" class="vng-logo">
+        </div>
+
+        <p class="copyright">© 2024 Riot Games, Inc.</p>
+
+        <p class="address">Công Ty Cổ Phần VNG Địa chỉ: Lô 03b-04-05-06-07, đường số 13, khu Công Nghiệp, Khu Chế Xuất
+            Tân Thuận, phường Tân Thuận Đông, Quận 7, TP.HCM.</p>
+
+        <div class="legal-links">
+            <a href="#">CHÍNH SÁCH BẢO MẬT</a>
+            <a href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
+            <a href="#">ĐIỀU KHOẢN SỬ DỤNG (VNG)</a>
+            <a href="#">TÙY CHỌN COOKIES</a>
+        </div>
+
+        <div class="age-rating">
+            <img src="./FileImageAndvideo/18age.png" alt="18+ Rating">
+        </div>
+    </div>
+</footer>
+
+</html>

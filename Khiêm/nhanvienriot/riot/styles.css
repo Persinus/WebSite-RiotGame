@@ -1,0 +1,900 @@
+html, body {
+    height: 100%; /* Đặt chiều cao của html và body là 100% */
+    margin: 0; /* Bỏ margin mặc định */
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #000000;
+    padding: 10px 0;
+    width: 100%; /* Đảm bảo navbar kéo dài toàn bộ chiều ngang của trang */
+    z-index: 1000; /* Đảm bảo navbar luôn hiển thị trên các phần tử khác */
+    position: fixed; /* Đặt vị trí cố định */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    filter: brightness(0) invert(1); /* Chuyển màu logo thành trắng */
+    display: block;
+    margin: auto;
+    transition: filter 0.1s ease; /* Hiệu ứng chuyển đổi */
+}
+
+/*hinhnenworld2024*/
+.world2024 {
+    background-image: url('image/tải xuống.jfif'); /* Đường dẫn tới hình nền */
+    background-size: cover; /* Phủ đầy diện tích */
+    background-position: center; /* Căn giữa hình nền */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    height: 70vh; /* Chiều cao của section bằng 100% chiều cao viewport */
+    color: white; /* Màu chữ */
+    display: flex; /* Căn chỉnh nội dung */
+    flex-direction: column; /* Chiều dọc */
+    justify-content: center; /* Giữa theo chiều dọc */
+    align-items: center; /* Giữa theo chiều ngang */
+}
+.world2024-content {
+    text-align: center; /* Căn giữa nội dung trong khối */
+    color: white; /* Màu chữ */
+    max-width: 800px; /* Đặt chiều rộng tối đa cho nội dung */
+    margin-left: 0; /* Đảm bảo không có khoảng cách bên trái */
+}
+
+.world2024-label,
+.world2024-content h1,
+.world2024-content p {
+    text-align: left; /* Căn trái cho từng dòng chữ */
+    margin: 0; /* Xóa bỏ khoảng cách mặc định */
+    padding: 0; /* Xóa bỏ khoảng cách mặc định */
+}
+
+/* Nếu muốn các phần tử này có chiều rộng nhất định để căn giữa chúng */
+.world2024-content {
+    width: 100%; /* Đảm bảo nội dung chiếm hết chiều rộng */
+    max-width: 600px; /* Chiều rộng tối đa của nội dung */
+    margin-left: 0; /* Đảm bảo căn trái */
+}
+.btn-xem-ngay {
+    display: inline-flex; /* Sử dụng flex để căn giữa */
+    align-items: center; /* Căn giữa dọc */
+    background-color: #00BFFF; /* Màu nền xanh trời */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    margin-top: 20px; /* Khoảng cách trên nút */
+    border-radius: 5px; /* Bo tròn góc */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 16px; /* Kích thước chữ */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.btn-xem-ngay:hover {
+    background-color: #0099cc; /* Màu nền khi hover */
+}
+
+.icon-arrow {
+    width: 30px; /* Độ rộng của mũi tên */
+    height: 30px; /* Độ cao của mũi tên */
+    background-color: black; /* Màu nền đen */
+    border-radius: 50%; /* Bo tròn hoàn toàn */
+    display: flex; /* Sử dụng flex để căn giữa */
+    align-items: center; /* Căn giữa dọc */
+    justify-content: center; /* Căn giữa ngang */
+    margin-right: 10px; /* Khoảng cách bên phải */
+    color: white; /* Màu mũi tên trắng */
+}
+
+.icon-arrow::before {
+    content: '→'; /* Mũi tên sang phải */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+
+
+/* Khi hover, chuyển sang màu đỏ */
+.logo:hover {
+    filter: brightness(0) invert(42%) sepia(94%) saturate(7500%) hue-rotate(-10deg) brightness(96%) contrast(121%);
+    cursor: pointer; /* Thay đổi con trỏ thành chỉ tay */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Căn giữa logo */
+}
+
+.small-logo {
+    width: 40px; /* Điều chỉnh kích thước logo */
+    height: auto;
+    filter: invert(100%); /* Đảo ngược màu sắc của logo */
+    cursor: pointer; /* Khi trỏ chuột vào, con trỏ sẽ thành pointer */
+    margin: 0 30px; /* Tạo khoảng cách ngang */
+   
+}
+
+.small-logo:hover {
+    
+    cursor: pointer; /* Khi trỏ chuột vào, con trỏ sẽ thành pointer */
+
+}
+
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+.navbar-menu li {
+    position: relative;
+   
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 8px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.navbar-menu .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.navbar-menu .dropdown:hover .dropdown-content {
+    display: block;
+    top: 30px;
+}
+
+/* Dropdown nội dung */
+.navbar-menu .dropdown-content a {
+    color: #fff;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.85rem;
+}
+
+.navbar-menu .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Navbar Hover */
+.navbar-menu li a:hover {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+/* Hover underline effect */
+.navbar-menu li a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #e60012;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Active menu item */
+.navbar-menu li.active a {
+    border-bottom: 3px solid #e60012;
+}
+
+/* Search & Icon Styles */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.iconify[data-icon="ph:globe"] {
+    color: #fff;
+    background-color: #111;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 37px;
+}
+
+.iconify[data-icon="ph:globe"]:hover {
+    background-color: #333;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 5px 15px;
+    border-radius: 25px;
+    width: 160px;
+}
+
+.search-container input {
+    border: none;
+    background: none;
+    color: #b0b0b0;
+    outline: none;
+    font-size: 0.7rem;
+    padding-left: 5px;
+    width: 100px;
+}
+
+.search-container input::placeholder {
+    color: #b0b0b0;
+}
+
+.search-container .iconify[data-icon="material-symbols:search-rounded"] {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #fd3a4a;
+    color: #000;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #d50010;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('image/tf-graves-pride-0.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hero-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 600px; /* Giới hạn chiều rộng tối đa của đoạn văn */
+    margin-bottom: 20px;
+    margin-left: auto; /* Căn giữa đoạn văn */
+    margin-right: auto; /* Căn giữa đoạn văn */
+    text-align: center; /* Căn giữa nội dung đoạn văn */
+    line-height: 1.6; /* Tăng khoảng cách dòng để đoạn văn dễ đọc hơn */
+}
+
+
+/* Hero Label Styles */
+.hero-label {
+    background-color: #fe4454;
+    color: white;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Styles for Activities Section */
+.activities-section {
+    padding: 40px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.activities {
+    display: flex;
+    justify-content: space-around; /* Giữ các ảnh gần nhau hơn */
+    gap: 0px; /* Loại bỏ khoảng cách giữa các phần tử */
+    padding: 50px 80px; /* Điều chỉnh khoảng cách lề trái phải */
+}
+
+.activities-section h2 {
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.activity {
+    width: 30%;
+    text-align: center;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff; /* Màu chữ trắng chỉ áp dụng cho text trong khung */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Ẩn phần thừa của hình ảnh nếu có */
+}
+
+.activity:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.activity::before {
+    content: "";
+    display: block;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px; /* Cập nhật chiều cao của khung ảnh */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(100%);
+}
+
+.activity:hover::before {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+/* Gắn hình ảnh cho từng hoạt động cụ thể */
+.activity:nth-child(1)::before {
+    background-image: url('image/faker.jpg');
+}
+
+.activity:nth-child(2)::before {
+    background-image: url('image/riotgame community.jpeg');
+}
+
+.activity:nth-child(3)::before {
+    background-image: url('image/ekkotruedame.jpg');
+}
+
+.activity h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.activity a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.activity a:hover {
+    text-decoration: underline;
+}
+
+/* Annual Report Section */
+.annual-report-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.report-years {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.year {
+    width: 20%;
+}
+
+.year h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.year a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.year a:hover {
+    text-decoration: underline;
+}
+
+.activities-section h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+    max-width: 910px;
+    margin: 20px auto;
+    text-align: justify;
+}
+.activities-section p{
+    font-size: 1.2rem;
+    max-width: 1050px; /* Giới hạn chiều rộng tối đa của đoạn văn */
+    margin-bottom: 20px;
+    margin-left: auto; /* Căn giữa đoạn văn */
+    margin-right: auto; /* Căn giữa đoạn văn */
+    text-align: center; /* Căn giữa nội dung đoạn văn */
+    line-height: 1.6; /* Tăng khoảng cách dòng để đoạn văn dễ đọc hơn */
+}
+.activities-section h4 
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.report-years
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.year img {
+    width: 250px; /* Điều chỉnh kích thước chiều rộng của hình ảnh */
+    height: auto;  /* Giữ tỷ lệ hình ảnh đúng */
+}
+/* CSS cho phần đối tác nằm trong cùng section */
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Điều chỉnh khoảng cách giữa các logo */
+    margin-top: 40px; /* Tạo khoảng cách với nội dung phía trên */
+}
+
+.partner-logo {
+    width: 350px; /* Điều chỉnh kích thước logo */
+    height: 150px; /* Tạo hình vuông cho các logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+/* Logo LXIG */
+.logo-lxig {
+    background-image: url('image/d-i-partner-logo-lxing.png'); /* Đường dẫn đến logo LXIG */
+}
+
+/* Logo ColorStack */
+.logo-colorstack {
+    background-image: url('image/d-i-partner-logo-tec-leimert.png'); /* Đường dẫn đến logo ColorStack */
+}
+
+/* Logo TEC */
+.logo-tec {
+    background-image: url('image/social-impact-colorstack-color.png'); /* Đường dẫn đến logo TEC */
+}
+
+/* CSS cho phần Đối Tác của Chúng Tôi */
+.partners-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Màu nền sáng */
+    text-align: center;
+}
+
+.partners-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.partners-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.partners-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.partner {
+    width: 30%;
+    padding: 20px;
+    text-align: center; /* Căn văn bản về bên trái */
+    background-color: transparent; /* Không có nền */
+    border: none; /* Không có viền */
+    box-shadow: none; /* Loại bỏ đổ bóng */
+}
+
+.partner h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.partner p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Nút kêu gọi hành động */
+.cta-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e02424; /* Màu nền đỏ cho nút */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 25px; /* Bo tròn các góc */
+    font-weight: bold;
+}
+
+.cta-link:hover {
+    background-color: #b01d1d; /* Hiệu ứng màu khi rê chuột qua */
+}
+
+/* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+    .partners-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partner {
+        width: 80%; /* Mỗi khối chiếm 80% chiều rộng màn hình trên thiết bị nhỏ */
+        margin-bottom: 20px;
+    }
+}
+/* Section: Tin Mới Nhất */
+.latest-news {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.news-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.news-items {
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* Để cho ngày tháng di chuyển ra ngoài */
+}
+
+.news-item {
+    width: 48%; /* Chia mỗi mục tin tức chiếm 48% chiều rộng */
+    position: relative;
+    background-color: transparent; /* Loại bỏ nền */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.news-img {
+    width: 100%;
+    height: 100%;
+    max-height: 800px; /* Chỉnh độ cao tối đa của hình ảnh */
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease; /* Hiệu ứng khi di chuột */
+    object-fit: cover; /* Giúp hình ảnh không bị biến dạng */
+}
+
+/* Hiệu ứng khi di chuột vào ảnh */
+.news-item:hover .news-img {
+    transform: scale(1.1); /* Phóng to nhẹ hình ảnh */
+    opacity: 0.7; /* Tối màu ảnh */
+}
+
+.news-content {
+    padding: 15px;
+    position: relative;
+}
+
+.news-label {
+    display: inline-block;
+    background-color: #e02424;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.news-heading {
+    font-size: 2em; /* Làm cho tiêu đề lớn hơn */
+    margin: 10px 0;
+    transition: text-decoration 0.3s ease;
+}
+
+/* Gạch chân tiêu đề khi di chuột */
+.news-item:hover .news-heading {
+    text-decoration: underline;
+}
+
+.news-date {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.8em;
+    color: #666;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    left: -70px; /* Đẩy ngày tháng ra ngoài khối bài viết */
+    transform: translateY(-50%) rotate(180deg); /* Căn chỉnh chính giữa khối nội dung */
+}
+
+.news-summary {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Gán ảnh từ CSS cho từng mục tin */
+.img1 {
+    background-image: url('image/celebrating-ramadan-article-header.png'); /* Thay thế bằng đường dẫn ảnh thực */
+}
+
+.img2 {
+    background-image: url('image/lny24-banner.png'); /* Thay thế bằng đường dẫn ảnh thực */
+}
+
+/* Responsive cho thiết bị di động */
+@media (max-width: 768px) {
+    .news-items {
+        flex-direction: column;
+    }
+
+    .news-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .news-date {
+        position: absolute;
+        top: 15px;
+        left: -25px;
+    }
+}
+/* General Footer Styles */
+.footer {
+    background-color: #111;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-logo {
+    width: 40px; /* Điều chỉnh kích thước theo yêu cầu */
+    height: auto;
+    filter: invert(1); /* Biến đổi màu từ đen sang trắng */
+    transition: filter 0.3s ease; /* Thêm hiệu ứng chuyển đổi khi di chuột */
+    cursor: pointer; /* Đổi thành con trỏ khi hover */
+}
+
+.footer-logo:hover {
+    filter: brightness(0) invert(42%) sepia(94%) saturate(7500%) hue-rotate(-10deg) brightness(96%) contrast(121%); /* Hiển thị logo màu đỏ khi hover */
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #ccc;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.social-links li a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    border-top: 1px solid #636363;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cookie, .copyright {
+    margin: 5px 0;
+}
+
+.to-top {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.to-top:hover {
+    color: #ccc;
+}
+/* Xác định kích thước cho các biểu tượng mạng xã hội */
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px; /* Kích thước tổng cho vùng chứa các biểu tượng */
+    margin: 0 auto; /* Căn giữa các biểu tượng */
+}
+
+.social-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; /* Điều chỉnh kích thước biểu tượng */
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /* Phóng to nhẹ khi di chuột */
+}
+
+/* Căn chỉnh biểu tượng nhỏ gọn */
+.social-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 0 5px; /* Khoảng cách giữa các biểu tượng */
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    padding: 20px;
+}
+
+.footer-logo {
+    margin-right: 20px; /* Cách biệt logo với các biểu tượng */
+}
+
+
