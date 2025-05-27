@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-image: url('FileImageAndvideo/Bg_SignIn.png');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-sm md:max-w-md">
+        
+        <h2 class="text-xl md:text-2xl font-bold text-center mb-6">Đăng nhập</h2>
+        <form>
+            <div class="mb-4">
+                <input class="w-full p-3 border border-gray-300 rounded-lg" name="username" placeholder="TÊN NGƯỜI DÙNG" type="text" required/>
+            </div>
+            <div class="mb-4">
+                <input class="w-full p-3 border border-gray-300 rounded-lg" name="password" placeholder="MẬT KHẨU" type="password" required/>
+            </div>
+            <div class="flex justify-between items-center mb-4">
+                <a href="https://www.facebook.com" target="_blank" class="bg-blue-600 text-white p-3 rounded-full flex-1 mx-1 text-center">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D%25C4%2591%25C3%25A0ng%2Bnh%25E1%25BA%25ADp%2Bggg%26oq%3D%25C4%2591%25C3%25A0ng%2Bnh%25E1%25BA%25ADp%2Bggg%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKABMgkIAhAhGAoYoAEyCQgDECEYChigATIJCAQQIRgKGKAB0gEIOTUyOWowajSoAgCwAgE%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&hl=vi&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S756731459%3A1728086706236245&ddm=1" target="_blank" class="bg-red-600 text-white p-3 rounded-full flex-1 mx-1 text-center">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.icloud.com/" target="_blank" class="bg-black text-white p-3 rounded-full flex-1 mx-1 text-center">
+                    <i class="fab fa-apple"></i>
+                </a>
+            </div>
+            <div class="flex justify-between items-center mb-4">
+                <a href="https://login.live.com/oauth20_authorize.srf?client_id=1f907974-e22b-4810-a9de-d9647380c97e&scope=xboxlive.signin+openid+profile+offline_access&redirect_uri=https%3a%2f%2fwww.xbox.com%2fauth%2fmsa%3faction%3dloggedIn%26locale_hint%3dvi-VN&response_type=code&state=eyJpZCI6IjAxOTI1OWZkLWEwZTYtNzE4NS1iMjlmLWZjMGQwMTVjNzZlZSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3d%7chttps%253A%252F%252Fwww.xbox.com%252F&response_mode=fragment&nonce=019259fd-a0e7-7396-a89d-fdbcc8ad8fd7&prompt=select_account&code_challenge=cY08wMIz5WQKf-zXsch8TDU7AaKALcqEE-JnJPxP5Mg&code_challenge_method=S256&x-client-SKU=msal.js.browser&x-client-Ver=3.20.0&uaid=16a2d099eecc4cbba956a8c2ff082829&msproxy=1&issuer=mso&tenant=consumers&ui_locales=vi-VN&client_info=1&epct=PAQABDgEAAADW6jl31mB3T7ugrWTT8pFeQDZOT4WQw7dslWiZZxH2lf9QJlZy6jLAoEbJylLdVeOf_oRp5K6Bn-jQQHNDgrdaQ7sgIbW1skGm6UjOZcHFkIsHJzlhZGpiWGw4K3aktgRwMs-WkQHiBN7JMfJpi1UNZL_gkJp5lYXVmz2KVbtJx8Q13d8UZDaVV-DrwocKtDDkTS4W2QZg6lAhzqGehY7GEFcjTVOTqhhRdVHcpLFNRiAA&jshs=0#" target="_blank" class="bg-green-600 text-white p-3 rounded-full flex-1 mx-1 text-center">
+                    <i class="fab fa-xbox"></i>
+                </a>
+                <a href="https://my.account.sony.com/sonyacct/signin/?duid=0000000700090100ee91b6bec56e6d153eddba3428a021f52a709e422b59ce7c273620169575df75&response_type=code&client_id=e4a62faf-4b87-4fea-8565-caaabb3ac918&scope=web%3Acore&access_type=offline&state=e0a515a36a38c8bc5094deea111af80405126295de66b06df4bf9b662525bb43&service_entity=urn%3Aservice-entity%3Apsn&ui=pr&smcid=web%3Apdc&redirect_uri=https%3A%2F%2Fweb.np.playstation.com%2Fapi%2Fsession%2Fv1%2Fsession%3Fredirect_uri%3Dhttps%253A%252F%252Fio.playstation.com%252Fcentral%252Fauth%252Flogin%253Flocale%253Den_US%2526postSignInURL%253Dhttps%25253A%25252F%25252Fwww.playstation.com%25252Fen-us%25252F%2526cancelURL%253Dhttps%25253A%25252F%25252Fwww.playstation.com%25252Fen-us%25252F%26x-psn-app-ver%3D%2540sie-ppr-web-session%252Fsession%252Fv5.36.0&auth_ver=v3&error=login_required&error_code=4165&error_description=User+is+not+authenticated&no_captcha=true&cid=81d31687-3269-492b-82b3-ef988b6741e3#/signin/input/id" target="_blank" class="bg-blue-800 text-white p-3 rounded-full flex-1 mx-1 text-center">
+                    <i class="fab fa-playstation"></i>
+                </a>
+            </div>
+            
+            <div class="flex items-center mb-4">
+                <input class="mr-2" id="remember" type="checkbox"/>
+                <label class="text-gray-700" for="remember">Lưu đăng nhập</label>
+            </div>
+            <div class="flex justify-center mb-4">
+                <button id="navigateButton" class="bg-gray-200 p-3 rounded-full" type="button">
+                    <i class="fas fa-arrow-right text-gray-700"></i>
+                    
+                </button>
+            </div>
+            <div class="text-center">
+                <a class="text-gray-700" href="#">KHÔNG THỂ ĐĂNG NHẬP?</a><br/>
+                <a class="text-gray-700" href="#">TẠO TÀI KHOẢN</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('navigateButton').addEventListener('click', function() {
+            window.location.href = "../huy/nhanvienriot-main/diversity-and-inclusion.html"; 
+        });
+    </script>
+</body>
+</html>
